@@ -1,0 +1,95 @@
+body {
+  font-family: "Poppins";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  margin: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+cite {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: brightness(1.15) contrast(1.1) saturate(1.25);
+  box-shadow: 0 0 0 3px white, 0 0 0 6px black;
+}
+
+.social {
+  width: 25px;
+}
+
+.card {
+  width: 1000px;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 0 0 black;
+  line-height: 1.2rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  /* align-items: center; */
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
