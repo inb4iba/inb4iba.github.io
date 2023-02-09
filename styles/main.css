@@ -5,6 +5,7 @@
 header {
   height: 3rem;
   background-color: black;
+  border: 2px solid black;
 }
 
 footer {
