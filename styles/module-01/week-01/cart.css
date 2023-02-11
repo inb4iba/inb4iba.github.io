@@ -1,0 +1,87 @@
+.exercise-container {
+  background: linear-gradient(180deg, white 0%, black 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.exercise-container .cart-wrapper {
+  margin: 2rem auto;
+  max-width: 1080px;
+}
+
+.exercise-container table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+.exercise-container thead th:nth-child(1) {
+  width: 15%;
+}
+
+.exercise-container thead th:nth-child(2) {
+  width: 20%;
+}
+
+.exercise-container thead th:nth-child(3) {
+  width: 55%;
+}
+
+.exercise-container thead th:nth-child(4) {
+  width: 10%;
+}
+
+.exercise-container tbody td:nth-child(1) {
+  text-align: center;
+}
+
+.exercise-container tbody td:nth-child(4),
+.exercise-container tfoot td:nth-child(4) {
+  text-align: end;
+}
+
+.exercise-container td img {
+  width: 100%;
+}
+
+.exercise-container th,
+.exercise-container td {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.exercise-container tbody tr {
+  background-color: white;
+  color: black;
+}
+
+.exercise-container table {
+  background-color: black;
+  color: white;
+}
+
+.exercise-container .buy-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.25rem;
+  transition: all 200ms;
+}
+
+.exercise-container .buy-btn:visited,
+.exercise-container .buy-btn {
+  text-decoration: none;
+}
+
+.exercise-container .buy-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.exercise-container .btn-wrapper {
+  display: flex;
+  justify-content: end;
+}

@@ -1,0 +1,73 @@
+:root {
+  --dark-color: black;
+  --white-color: white;
+}
+
+.exercise-container form {
+  width: 600px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exercise-container .container {
+  margin: 1rem;
+}
+
+.exercise-container .input {
+  display: flex;
+  position: relative;
+}
+
+.exercise-container .input-field {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--dark-color);
+  padding: 0.75rem 0.75rem 0.5rem;
+  color: var(--dark-color);
+  border-radius: 0.25rem;
+}
+
+.exercise-container .input-field:focus {
+  box-shadow: 0 0 0 2px var(--white-color), 0 0 0 4px var(--dark-color),
+    0 4px 8px #0004;
+  outline: none;
+}
+
+.exercise-container .input-label {
+  position: absolute;
+  left: 0.5rem;
+  font-size: 0.8rem;
+  top: 0;
+  transform: translateY(-60%);
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--dark-color);
+}
+
+.exercise-container fieldset > label {
+  margin-right: 1rem;
+}
+
+.exercise-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.exercise-container .color-field {
+  height: 3rem;
+}
+
+.exercise-container .hidden {
+  position: absolute;
+  display: none;
+}
+
+.exercise-container #file-input img {
+  width: 100px;
+}

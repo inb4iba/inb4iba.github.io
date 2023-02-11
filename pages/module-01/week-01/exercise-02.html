@@ -1,6 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <link
+      rel="stylesheet"
+      href="../../../styles/module-01/week-01/exercise-02.css"
+    />
+  </head>
   <body>
-    <h4>Isso é um teste!!!</h4>
+    <h4>Formulário</h4>
+    <blockquote>
+      <h6>Descrição do exercício:</h6>
+      <ul>
+        <li>
+          Crie um formulário e adicione todos tipos de inputs que você aprendeu
+          durantes as aulas, principalmente os checkboxes, radio-buttons e
+          opções para escolher cores ou selecionar um arquivo. Seja criativo
+          para adicionar à labels para cada um deles. (Estilização opcional)
+        </li>
+      </ul>
+    </blockquote>
+    <hr />
+
+    <div class="exercise-container">
+      <div class="container">
+        <form>
+          <div class="input">
+            <input type="text" class="input-field" />
+            <label class="input-label">Nome</label>
+          </div>
+          <div class="input">
+            <input type="date" class="input-field" />
+            <label class="input-label">Data de Nascimento</label>
+          </div>
+          <div class="input">
+            <input type="email" class="input-field" />
+            <label class="input-label">E-mail</label>
+          </div>
+          <div class="input">
+            <input type="color" class="input-field color-field" />
+            <label class="input-label">Cor favorita</label>
+          </div>
+          <div class="input">
+            <input type="file" class="hidden trigger" />
+            <div id="file-input" class="input-field">
+              <img
+                src="https://img.freepik.com/psd-premium/falso-x-icone-errado-3d_568120-948.jpg?w=200"
+                alt=""
+              />
+            </div>
+            <label class="input-label">Envie uma foto</label>
+          </div>
+          <div class="input">
+            <fieldset class="input-field">
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Masculino</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Feminino</label>
+              <input type="radio" name="gender" id="neutral" />
+              <label for="neutral">Neutro</label>
+            </fieldset>
+            <label class="input-label">Gênero</label>
+          </div>
+          <div class="input">
+            <fieldset class="input-field">
+              <input type="checkbox" name="knowledges" id="html" />
+              <label for="html">HTML</label>
+              <input type="checkbox" name="gender" id="css" />
+              <label for="css">CSS</label>
+              <input type="checkbox" name="gender" id="javascript" />
+              <label for="javascript">Javascript</label>
+              <input type="checkbox" name="gender" id="angular" />
+              <label for="angular">Angular</label>
+              <input type="checkbox" name="gender" id="java" />
+              <label for="java">Java</label>
+            </fieldset>
+            <label class="input-label">Conhecimentos</label>
+          </div>
+          <div class="input">
+            <textarea class="input-field"> </textarea>
+            <label class="input-label">Fale sobre você</label>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <script>
+        const parent = document.getElementById("file-input").parentElement;
+
+        document
+          .getElementsByClassName("trigger")[0]
+          .addEventListener("change", (e) => {
+            const file = e.target.files[0];
+
+            let fileReader = new FileReader();
+            fileReader.readAsDataURL(file);
+            fileReader.onload = (e) => {
+              parent
+                .querySelector("#file-input>img")
+                .setAttribute("src", fileReader.result);
+            };
+          });
+
+        parent.addEventListener("click", (e) => {
+          e.currentTarget.querySelector(".trigger").click();
+        });
+      </script>
+    </div>
   </body>
 </html>

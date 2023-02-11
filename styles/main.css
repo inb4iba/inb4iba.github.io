@@ -33,6 +33,11 @@ blockquote ul {
   list-style: inside;
 }
 
+blockquote ol {
+  list-style: decimal;
+  margin-left: 1rem;
+}
+
 blockquote li {
   padding-block: 0.25rem;
 }

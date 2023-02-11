@@ -1,6 +1,348 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <link
+      rel="stylesheet"
+      href="../../../styles/module-01/week-01/exercise-03.css"
+    />
+  </head>
   <body>
-    <h4>Isso é um teste!!!</h4>
+    <h5>Loja Virtual</h5>
+    <blockquote>
+      <h6>Descrição do exercício:</h6>
+      <ul>
+        <li>
+          Crie uma listagem de produtos. Dentro do card adicione informações
+          sobre Imagem, Título, Descrição, Valor.
+        </li>
+        <li>Adicione botões de "comprar agora ou adicionar ao carrinho"</li>
+        <li>
+          Agora após estruturar o site vamos adicionar a estilização ao nosso
+          site. Na cor de fundo você terá que criar um gradiente (a sua
+          escolha). Cada produto terá um card em uma cor clara (a sua escolha).
+          Utilize o flexbox para alinhar e organizar seus elementos.
+        </li>
+        <li>
+          Crie uma estilização nas imagens e nos elementos que contém as
+          informações de Título, Descrição, Valor.
+        </li>
+        <li>
+          Cada produto deve ficar ao lado do outro como se fosse uma galeria
+          (grade)
+        </li>
+        <li>Criar uma nova página chamada "carrinho"</li>
+        <li>Adicione 2 produtos que estão na página principal.</li>
+        <li>
+          As colunas serão de acordo com cada informação do produto: imagem,
+          titulo, descricao, valor
+        </li>
+        <li>
+          No final abaixo da tabela adiciona um campo para representar o valor
+          total
+        </li>
+        <li>Adicione um botão de "Fechar pedido"</li>
+        <li>
+          Volte para a tela inicial e adicione o link nos botões “adicionar ao
+          carrinho”. Quando clicado será redirecionado para página de carrinho.
+        </li>
+      </ul>
+    </blockquote>
+    <hr />
+    <div class="exercise-container">
+      <div class="container">
+        <ul class="grid">
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                alt=""
+              />
+              <span class="price">R$100</span>
+              <div>
+                <h5>Titulo</h5>
+                <p>Descrição</p>
+              </div>
+            </div>
+            <div class="card-btns">
+              <button class="btn">Comprar agora</button>
+              <button class="btn" onclick="goToCart()">
+                Adicionar ao carrinho
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function goToCart() {
+        $("#exercise").load("week-01/cart.html");
+      }
+    </script>
   </body>
 </html>

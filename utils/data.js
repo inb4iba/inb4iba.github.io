@@ -39,7 +39,7 @@ const data = {
     },
     {
       id: 4,
-      title: "Operadores relacionais e estruturas de repetição",
+      title: "Operadores de atribuição e estruturas de repetição",
       html: "week-02/exercise-05.html",
     },
   ],

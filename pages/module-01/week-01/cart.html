@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="../../../styles/module-01/week-01/cart.css" />
+  </head>
+  <body>
+    <h5>Loja Virtual</h5>
+    <blockquote>
+      <h6>Descrição do exercício:</h6>
+      <ul>
+        <li>
+          Crie uma listagem de produtos. Dentro do card adicione informações
+          sobre Imagem, Título, Descrição, Valor.
+        </li>
+        <li>Adicione botões de "comprar agora ou adicionar ao carrinho"</li>
+        <li>
+          Agora após estruturar o site vamos adicionar a estilização ao nosso
+          site. Na cor de fundo você terá que criar um gradiente (a sua
+          escolha). Cada produto terá um card em uma cor clara (a sua escolha).
+          Utilize o flexbox para alinhar e organizar seus elementos.
+        </li>
+        <li>
+          Crie uma estilização nas imagens e nos elementos que contém as
+          informações de Título, Descrição, Valor.
+        </li>
+        <li>
+          Cada produto deve ficar ao lado do outro como se fosse uma galeria
+          (grade)
+        </li>
+        <li>Criar uma nova página chamada "carrinho"</li>
+        <li>Adicione 2 produtos que estão na página principal.</li>
+        <li>
+          As colunas serão de acordo com cada informação do produto: imagem,
+          titulo, descricao, valor
+        </li>
+        <li>
+          No final abaixo da tabela adiciona um campo para representar o valor
+          total
+        </li>
+        <li>Adicione um botão de "Fechar pedido"</li>
+        <li>
+          Volte para a tela inicial e adicione o link nos botões “adicionar ao
+          carrinho”. Quando clicado será redirecionado para página de carrinho.
+        </li>
+      </ul>
+    </blockquote>
+    <hr />
+    <div class="exercise-container">
+      <section class="cart-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Produto</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                  alt=""
+                />
+              </td>
+              <td>Boné aba reta</td>
+              <td>Bombeta top pra ficar no drip.</td>
+              <td>R$35,00</td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+                  alt=""
+                />
+              </td>
+              <td>Skate Longboard</td>
+              <td>Ótimo pra dar uns role em alta velocidade.</td>
+              <td>R$105,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <td></td>
+              <td></td>
+              <td>R$140,00</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="btn-wrapper">
+          <button class="buy-btn" onclick="goToShop()">Fechar Pedido</button>
+        </div>
+      </section>
+
+      <script>
+        function goToShop() {
+          $("#exercise").load("week-01/exercise-03.html");
+        }
+      </script>
+    </div>
+  </body>
+</html>
