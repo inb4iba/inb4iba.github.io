@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../styles/module-01/week-02/exercise-03.css"
+    />
+  </head>
   <body>
     <h4>Arrays</h4>
     <blockquote>
@@ -14,5 +26,71 @@
       </ul>
     </blockquote>
     <hr />
+    <blockquote>
+      <h6>Resposta:</h6>
+      <ul>
+        <li>
+          O primeiro cenário que me veio a cabeça foi o de um inventário de um
+          jogo.
+        </li>
+        <li>
+          No caso o jogador pode adicionar diversos itens no inventário, podendo
+          ter um número máximo e excluir os itens a qualquer momento (jogar
+          fora, usar o item, etc).
+        </li>
+      </ul>
+    </blockquote>
+    <div class="exercise-container">
+      <section id="inventory">
+        <span>Inventário</span>
+        <div class="container">
+          <div class="row">
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+          </div>
+          <div class="row">
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+          </div>
+          <div class="row">
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+          </div>
+          <div class="row">
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+          </div>
+        </div>
+      </section>
+      <section id="interactionBtns">
+        <div id="addItem">
+          <input type="text" />
+          <button id="addBtn" onclick="addBtnClicked()">Adicionar Item</button>
+        </div>
+        <div id="removeItem">
+          <input type="text" />
+          <button id="removeBtn" onclick="removeBtnClicked()">
+            Remover Item
+          </button>
+        </div>
+        <button id="clearBtn" onclick="clearInventory()">
+          Limpar Inventário
+        </button>
+      </section>
+
+      <script src="../../../scripts/module-01/week-02/exercise-03.js"></script>
+    </div>
   </body>
 </html>

@@ -1,0 +1,60 @@
+.exercise-container #inventory {
+  margin: 1rem auto;
+  background-color: #976a40;
+  padding: 0.5rem 1rem 1rem;
+  border-radius: 0.5rem;
+  max-width: fit-content;
+}
+
+.exercise-container #inventory > span {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  color: #382009;
+}
+
+.exercise-container .container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exercise-container .row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.exercise-container .slot {
+  height: 100px;
+  width: 100px;
+  background-color: #382009;
+  border-radius: 0.5rem;
+}
+
+.exercise-container #interactionBtns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.exercise-container #interactionBtns > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.exercise-container #interactionBtns input,
+.exercise-container #interactionBtns button {
+  display: block;
+  padding: 0.5rem 1rem;
+  max-width: 6rem;
+}
+
+.exercise-container .filled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #382009;
+  background-color: #ffc547;
+}
