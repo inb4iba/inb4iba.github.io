@@ -20,27 +20,27 @@ const data = {
     {
       id: 0,
       title: "Discursivas",
-      html: "teste.html",
+      html: "week-02/exercise-01.html",
     },
     {
       id: 1,
       title: "Váriaveis + Template Literals",
-      html: "teste.html",
+      html: "week-02/exercise-02.html",
     },
     {
       id: 2,
       title: "Arrays",
-      html: "teste.html",
+      html: "week-02/exercise-03.html",
     },
     {
       id: 3,
       title: "Operadores Lógicos",
-      html: "teste.html",
+      html: "week-02/exercise-04.html",
     },
     {
       id: 4,
       title: "Operadores relacionais e estruturas de repetição",
-      html: "teste.html",
+      html: "week-02/exercise-05.html",
     },
   ],
 };
