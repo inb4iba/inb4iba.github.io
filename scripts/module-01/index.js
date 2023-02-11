@@ -31,10 +31,26 @@ function createExercisesList(exercises, parentElement) {
     )}</span>${exercise.title}</li>`;
   });
 
+  $(ul)
+    .children()
+    .map((idx, element) =>
+      $(element).click((e) => {
+        $(".exercise-btn.selected").removeClass("selected");
+        $(e.currentTarget).addClass("selected");
+        $("#exercise").load(exercises[idx].html);
+      })
+    );
+
+  createBackBtn(parentElement);
+  $(ul).insertAfter(parentElement);
+}
+
+function createBackBtn(parentElement) {
   $(`<li id="back-btn" class="week-btn">Voltar</li>`).insertAfter(
     parentElement
   );
   $("#back-btn").click((e) => {
+    $("#exercise").empty();
     $(e.currentTarget).addClass("hide");
     $(`#${previousSelection}`).addClass("hide");
     setTimeout(() => {
@@ -43,7 +59,6 @@ function createExercisesList(exercises, parentElement) {
     const temp = previousSelection;
     returnWeeks(temp);
   });
-  $(ul).insertAfter(parentElement);
 }
 
 function returnWeeks(temp) {

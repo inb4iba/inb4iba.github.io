@@ -1,0 +1,66 @@
+#exercise-01-menu {
+  /* background-color: white; */
+  width: 100%;
+  top: 0;
+  box-shadow: 0 5px 2px -22px #0005;
+  margin-bottom: 2rem;
+}
+
+#exercise-01-menu > ul {
+  display: flex;
+  list-style: none;
+}
+
+.exercise-01-link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.exercise-01-link:hover {
+  color: black;
+  background-color: white;
+}
+
+.exercise-01-link:visited {
+  text-decoration: none;
+}
+
+.exercise-01-section {
+  margin: 0.5rem 0;
+  padding-top: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.exercise-01-list {
+  margin-left: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.exercise-container {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
