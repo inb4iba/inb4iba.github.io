@@ -102,6 +102,34 @@ header nav a:visited:hover {
   color: black;
 }
 
+.code {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.code-reserved {
+  color: #ff53a9;
+}
+
+.code-fn {
+  color: #5af15a;
+}
+
+.code-number {
+  color: #5ac6f1;
+}
+
+.code-str {
+  color: #f5f838;
+}
+
+.code-comment {
+  color: #7e7e7e;
+  font-style: italic;
+}
+
 .main-container {
   width: min(90%, 1000px);
   margin: 2rem auto;
